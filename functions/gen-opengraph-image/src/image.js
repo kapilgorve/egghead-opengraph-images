@@ -57,7 +57,7 @@ function App() {
             style={{
               minHeight: "80%",
               maxHeight: "80%",
-              lineHeight: 1
+              lineHeight: 1.2
             }}
           >
             {window.title}
