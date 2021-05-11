@@ -19,13 +19,13 @@ exports.handler = async function(event, ctx) {
         // secure: true,
         custom_pre_function: {
           function_type: "remote",
-          source: `https://friendly-heyrovsky-86d9f9.netlify.app/.netlify/functions/gen-opengraph-image?${qs.stringify(
+          source: `https://ogurl.netlify.app/.netlify/functions/gen-opengraph-image?${qs.stringify(
             queryStringParameters
           )}`
         }
       }
     );
-    console.log(`https://friendly-heyrovsky-86d9f9.netlify.app/.netlify/functions/gen-opengraph-image?${qs.stringify(
+    console.log(`https://ogurl.netlify.app/.netlify/functions/gen-opengraph-image?${qs.stringify(
             queryStringParameters
           )}`)
     return {
